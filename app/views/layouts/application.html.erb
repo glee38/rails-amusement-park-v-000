@@ -20,6 +20,7 @@
             <span class="icon-bar"></span>
           </button>
         <a class="navbar-brand" href="<%= root_url %>"/>Home</a>
+        <%= render 'layouts/navigation' %>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -31,6 +32,7 @@
 
     <!-- content -->
     <div class="container"  role="main">
+      <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
 

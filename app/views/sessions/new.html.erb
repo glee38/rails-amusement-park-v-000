@@ -1,0 +1,7 @@
+<%= form_for @user, url: {action: "create"} do |f| %>
+  <p>
+  <%= f.label :user_name, "Select your name" %><br>
+  <%= f.collection_select(:id, User.all, :id, :name, include_blank: true) %>
+  </p>
+  <%= f.submit "Sign In" %>
+<% end %>
